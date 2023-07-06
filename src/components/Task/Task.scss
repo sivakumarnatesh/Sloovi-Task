@@ -1,0 +1,129 @@
+.Task {
+  margin: 20px 40px;
+  .TaskHeader {
+    .TaskTitle {
+      color: #000000;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .TaskBottom {
+      margin-top: 20px;
+      .TaskWebsite {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .TaskDescription {
+        color: gray;
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: italic;
+      }
+    }
+  }
+  .AddTask {
+    margin-top: 30px;
+    width: 400px;
+    height: 37px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    background: #f9f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #31354a;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    .Counter {
+      color: gray;
+      margin-left: 10px;
+    }
+    .AddIcon {
+      border-left: 1px solid #e5e5e5;
+      height: 37px;
+      padding: 10px 0 0 10px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    width: 400px;
+    padding: 0 18px;
+    // display: none;
+    overflow: hidden;
+    background-color: #edf7fc;
+    .DescField {
+      color: #262e39;
+      font-size: 18px;
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 500;
+      margin: 10px 0;
+    }
+    .Picker {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+    .ButtonContainer {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      .DeleteIcon{
+        cursor: pointer;
+      }
+      :where(.css-dev-only-do-not-override-14wwjjs).ant-btn-primary{
+        border-radius: 16px;
+        width: 90px;
+      }
+      :where(.css-dev-only-do-not-override-14wwjjs).ant-btn{
+        border-radius: 16px !important;
+        width: 90px;
+      }
+    }
+  }
+  .Tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    padding: 10px;
+    .TaskDetails {
+      display: flex;
+      .AssignDetails {
+        margin-left: 10px;
+        line-height: 20px;
+        .AssignName {
+          color: #262e39;
+          font-size: 16px;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 600;
+        //   line-height: 16px;
+        }
+        .AssignDate {
+          color: #d0021b;
+          font-size: 12px;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 500;
+        //   line-height: 13px;
+        }
+      }
+    }
+    .TaskIcons {
+      display: flex;
+      gap: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
